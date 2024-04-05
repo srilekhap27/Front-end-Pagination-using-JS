@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to top right,black,white);
+    height: 100vh;
+    line-height: 20px;
+    font-family: monospace;
+}
+
+.container{
+    width: 900px;
+    margin: 100px auto 0;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 20px;
+}
+
+.item .img img{
+    height: 200px;
+    transition: 0.5s;
+}
+
+.item .img{
+    background-image: linear-gradient(to top right,black,white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.item .content{
+    background-color:rgb(255 255 255 / 36%);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transform: translate(0,-30px);
+    backdrop-filter: blur(20px);
+    color: black;
+}
+
+.title{
+    font-size: x-large;
+}
+
+.item .content .des{
+    opacity: .7;
+    margin: 10px 0;
+}
+
+.item .content .price{
+    font-size: large;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.item .content .add{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+}
+ 
+
+/* to hover the image */
+.item:hover img{ 
+    transform: translate(0, -50px);
+}
+
+/* Pagination */
+.listPage{
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+.listPage li{
+    background-color: #ffff;
+    padding: 10px;
+    display: inline-block; /*to appear in boxes*/
+    margin: 5px;
+    cursor: pointer;
+}
+
+.listPage .active{
+    background-color: black;
+    color: white;
+}
